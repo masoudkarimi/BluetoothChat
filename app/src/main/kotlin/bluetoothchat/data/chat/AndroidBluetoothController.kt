@@ -1,4 +1,4 @@
-package ir.masoudkarimi.bluetoothchat.data.chat
+package bluetoothchat.data.chat
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -8,8 +8,8 @@ import android.bluetooth.BluetoothManager
 import android.content.Context
 import android.content.IntentFilter
 import android.content.pm.PackageManager
-import ir.masoudkarimi.bluetoothchat.domain.chat.BluetoothController
-import ir.masoudkarimi.bluetoothchat.domain.chat.BluetoothDeviceDomain
+import bluetoothchat.domain.chat.BluetoothController
+import bluetoothchat.domain.chat.BluetoothDeviceDomain
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

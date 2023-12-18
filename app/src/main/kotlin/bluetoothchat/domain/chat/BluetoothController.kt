@@ -1,4 +1,4 @@
-package ir.masoudkarimi.bluetoothchat.domain.chat
+package bluetoothchat.domain.chat
 
 import kotlinx.coroutines.flow.StateFlow
 

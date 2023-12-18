@@ -1,4 +1,4 @@
-package ir.masoudkarimi.bluetoothchat
+package bluetoothchat
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

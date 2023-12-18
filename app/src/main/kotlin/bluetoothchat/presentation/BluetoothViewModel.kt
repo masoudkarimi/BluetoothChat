@@ -1,9 +1,9 @@
-package ir.masoudkarimi.bluetoothchat.presentation
+package bluetoothchat.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import ir.masoudkarimi.bluetoothchat.domain.chat.BluetoothController
+import bluetoothchat.domain.chat.BluetoothController
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.combine

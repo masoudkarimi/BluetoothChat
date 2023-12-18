@@ -1,4 +1,4 @@
-package ir.masoudkarimi.bluetoothchat.ui.theme
+package bluetoothchat.ui.theme
 
 import android.app.Activity
 import android.os.Build

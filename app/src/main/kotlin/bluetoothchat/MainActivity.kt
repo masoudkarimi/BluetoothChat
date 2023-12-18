@@ -1,4 +1,4 @@
-package ir.masoudkarimi.bluetoothchat
+package bluetoothchat
 
 import android.Manifest
 import android.bluetooth.BluetoothAdapter
@@ -15,9 +15,9 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.hilt.navigation.compose.hiltViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import ir.masoudkarimi.bluetoothchat.presentation.BluetoothViewModel
-import ir.masoudkarimi.bluetoothchat.presentation.components.DeviceScreen
-import ir.masoudkarimi.bluetoothchat.ui.theme.BluetoothChatTheme
+import bluetoothchat.presentation.BluetoothViewModel
+import bluetoothchat.presentation.components.DeviceScreen
+import bluetoothchat.ui.theme.BluetoothChatTheme
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

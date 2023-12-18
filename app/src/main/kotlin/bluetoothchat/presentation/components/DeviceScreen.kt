@@ -1,4 +1,4 @@
-package ir.masoudkarimi.bluetoothchat.presentation.components
+package bluetoothchat.presentation.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -16,8 +16,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import ir.masoudkarimi.bluetoothchat.domain.chat.BluetoothDevice
-import ir.masoudkarimi.bluetoothchat.presentation.BluetoothUiState
+import bluetoothchat.domain.chat.BluetoothDevice
+import bluetoothchat.presentation.BluetoothUiState
 
 @Composable
 fun DeviceScreen(

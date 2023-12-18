@@ -1,6 +1,6 @@
-package ir.masoudkarimi.bluetoothchat.presentation
+package bluetoothchat.presentation
 
-import ir.masoudkarimi.bluetoothchat.domain.chat.BluetoothDevice
+import bluetoothchat.domain.chat.BluetoothDevice
 
 data class BluetoothUiState(
     val scannedDevices: List<BluetoothDevice> = emptyList(),

@@ -1,4 +1,4 @@
-package ir.masoudkarimi.bluetoothchat.di
+package bluetoothchat.di
 
 import android.content.Context
 import dagger.Module
@@ -6,8 +6,8 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import ir.masoudkarimi.bluetoothchat.data.chat.AndroidBluetoothController
-import ir.masoudkarimi.bluetoothchat.domain.chat.BluetoothController
+import bluetoothchat.data.chat.AndroidBluetoothController
+import bluetoothchat.domain.chat.BluetoothController
 import javax.inject.Singleton
 
 @Module

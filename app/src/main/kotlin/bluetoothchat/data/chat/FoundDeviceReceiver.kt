@@ -1,4 +1,4 @@
-package ir.masoudkarimi.bluetoothchat.data.chat
+package bluetoothchat.data.chat
 
 import android.bluetooth.BluetoothDevice
 import android.content.BroadcastReceiver

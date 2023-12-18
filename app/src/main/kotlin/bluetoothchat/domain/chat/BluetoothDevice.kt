@@ -1,4 +1,4 @@
-package ir.masoudkarimi.bluetoothchat.domain.chat
+package bluetoothchat.domain.chat
 
 typealias BluetoothDeviceDomain = BluetoothDevice
 
