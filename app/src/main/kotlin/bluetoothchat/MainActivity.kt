@@ -26,6 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import bluetoothchat.presentation.BluetoothViewModel
+import bluetoothchat.presentation.components.ChatScreen
 import bluetoothchat.presentation.components.DeviceScreen
 import bluetoothchat.ui.theme.BluetoothChatTheme
 
@@ -125,6 +126,13 @@ class MainActivity : ComponentActivity() {
                             }
                         }
 
+                        state.isConnected -> {
+                            ChatScreen(
+                                state = state,
+                                onDisconnect = viewModel::disconnectFromDevice,
+                                onSendMessage = viewModel::sendMessage
+                            )
+                        }
                         else -> {
                             DeviceScreen(
                                 state = state,
