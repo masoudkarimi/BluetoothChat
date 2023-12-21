@@ -33,12 +33,20 @@ class MainActivity : ComponentActivity() {
     private val isBluetoothEnabled: Boolean
         get() = bluetoothAdapter?.isEnabled == true
 
+    private val deviceDiscoverableLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) {
+        Log.d("MainActivity", "Discovering Result: ${it.resultCode}, ${it.data}")
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val enableBluetoothLauncher = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()
         ) {
-
+            if (it.resultCode == RESULT_OK) {
+                makeDeviceDiscoverable()
+            }
         }
 
         val permissionLauncher = registerForActivityResult(
@@ -82,5 +90,14 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    // Make device discoverable for 3 minutes
+    private fun makeDeviceDiscoverable() {
+        val discoverableIntent = Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE).apply {
+            putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 180)
+        }
+
+        deviceDiscoverableLauncher.launch(discoverableIntent)
     }
 }
