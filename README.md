@@ -7,8 +7,8 @@ messages seamlessly. The project is based on the tutorial series by Philipp Lack
 find [here](https://www.youtube.com/watch?v=8ypJkxU4FCw).
 
 <p align="center">
-  <img src="images/image1.png" width="1080" alt="Image 1">
-  <img src="images/image2.png" width="1080" alt="Image 2">
+  <img src="images/image1.png" width="400" alt="Image 1">
+  <img src="images/image2.png" width="400" alt="Image 2">
 </p>
 
 ## Features
